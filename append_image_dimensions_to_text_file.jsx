@@ -7,12 +7,18 @@
 //
 
 // change the units to suit your needs - units.INCHES, units.MM, units.PIXELS
-app.preferences.rulerUnits = Units.MM;
-var docUnits = "mm";
+app.preferences.rulerUnits = Units.INCHES;
+var docUnits = "in";
+var decimals = 1;
+
+function round(value, precision) {
+    var multiplier = Math.pow(10, precision || 0);
+    return Math.round(value * multiplier) / multiplier;
+}
 
 var docRef = app.activeDocument;
-var docWidth = Math.round(docRef.width);
-var docHeight = Math.round(docRef.height);
+var docWidth = round(docRef.width, decimals);
+var docHeight = round(docRef.height, decimals);
 var docRez = docRef.resolution;
 
 var listText = "'filename' => "+docRef.name+" , 'width' => "+docWidth+" , 'height' => "+docHeight+" , 'units' => "+docUnits+" , 'resolution' => "+docRez+" , 'area' => "+(docHeight*docWidth);
