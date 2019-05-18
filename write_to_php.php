@@ -1,5 +1,9 @@
 <?php
+//
+// write a php file that can then be interpreted correctly by a browser.
+//
 // from: https://stackoverflow.com/questions/17029917/how-to-write-php-code-to-a-file-with-php
+//
 
 $filename = "output_php.php";
 $ourFileName =$filename;

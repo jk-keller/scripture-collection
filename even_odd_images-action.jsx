@@ -27,7 +27,7 @@ if (newWidth % 2 == 1) {
 if (newHeight % 2 == 1) {
   newHeight += changeAmt;
 }
-  
+
 // whatever, I couldn't quickly figure out how to get this to dynamically change
 switch (anchorChoice) {
   case 'BOTTOMLEFT':
