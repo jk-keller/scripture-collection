@@ -8,6 +8,7 @@
 | ![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/corners.png) corners | ![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/faux_3d.png) faux_3d | ![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/grid_of_fonts.png) grid_of_fonts |
 | ![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/random_rects.png) random_rects | ![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/same_shapes_connect_planes.png) same_shapes_connect_planes | ![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/sine_wave_boxes.png) sine_wave_boxes |
 | ![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/squares_at_vertices.png) squares_at_vertices | ![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/swatches_random_fill.png) swatches_random_fill | ![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/wellderly_dashes.png) wellderly_dashes |
+| ![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/calendar_items.png) calendar_items |  |  |
 
 | Photoshop | - | - |
 | --- | --- | --- |
