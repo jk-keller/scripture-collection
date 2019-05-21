@@ -1,6 +1,6 @@
 //
-// created by JK Keller, dilettante coder
-// http://jk-keller.com
+// created by A Nonlethal Jerk, dilettante coder
+// https://anonlethal-jerk.github.io/
 //
 
 #target illustrator
