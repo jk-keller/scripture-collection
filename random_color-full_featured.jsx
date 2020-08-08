@@ -17,24 +17,24 @@ if (selRef.length == 0) {
 		var pRed = 255;
 		var pBlue = 255;
 		var pGreen = 255;
-	
+
 	} else if (pKind == "RGB" || pKind == "rgb") {
 		var pRed = prompt("Red Amount? (0-255):",255);
 		var pBlue = prompt("Green Amount? (0-255):",255);
 		var pGreen = prompt("Blue Amount? (0-255):",255);
-	
+
 	} else if (pKind == "CMYK" || pKind == "cmyk") {
 		var pCyan = prompt("Cyan Amount? (0-100):",100);
 		var pMagenta = prompt("Magenta Amount? (0-100):",100);
 		var pYellow = prompt("Yellow Amount? (0-100):",100);
 		var pBright = prompt("Black Amount? (0-100):",0);
-	
+
 	} else if (pKind == "HSB" || pKind == "hsb") {
 		var pHue = prompt("Hue Amount? Negative numbers not randomized (0-360):",360);
 		var pSat = prompt("Saturation Amount? Negative numbers not randomized (0-1):",-1);
 		var pBright = prompt("Brightness Amount? Negative numbers not randomized (0-1):",-1);
 	}
-	
+
 	for (i=0; i<selRef.length; ++i) {
 		var pathRef = selRef[i];
 		if (pKind == "HSB" || pKind == "hsb") {
@@ -110,7 +110,7 @@ if (selRef.length == 0) {
 			strokeColor.yellow = Math.random() * pYellow;
 			strokeColor.black = Math.random() * pBright;
 		}
-	
+
 		if (pathRef.filled == true) {
 			pathRef.fillColor = fillColor;
 		}

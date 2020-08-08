@@ -29,29 +29,29 @@ for (i=0; i<selRef.length; ++i) {
 */
 
 /*
-  based on:
-  https://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
+	based on:
+	https://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
 */
 // new Date("dateString") is browser-dependent and discouraged, so we'll write
 // a simple parse function for U.S. date format (which does no error checking)
 function parseDate(ymd) {
-    return new Date(ymd[0], ymd[1]-1, ymd[2]);
+		return new Date(ymd[0], ymd[1]-1, ymd[2]);
 }
 
 function datediff(first, second) {
-    // Take the difference between the dates and divide by milliseconds per day.
-    // Round to nearest whole number to deal with DST.
-    return Math.round((second-first)/(1000*60*60*24));
+		// Take the difference between the dates and divide by milliseconds per day.
+		// Round to nearest whole number to deal with DST.
+		return Math.round((second-first)/(1000*60*60*24));
 }
 /*
-  end based on:
-  https://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
+	end based on:
+	https://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
 */
 var month_names = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
+	"July", "August", "September", "October", "November", "December"
 ];
 var month_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+	"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
 ];
 var start_date = [2018,10,1];
 var end_date =   [2020, 1,1];
@@ -66,28 +66,28 @@ var radius = 2;
 
 var layr = doc.layers.add();
 for (i=0; i<date_range+1; i++) {
-  var line = layr.pathItems.add();
-  line.stroked = true;
-  line.filled = false;
+	var line = layr.pathItems.add();
+	line.stroked = true;
+	line.filled = false;
 
-  var current_x = start_x + (i * multiplier);
-  var tempDate = parseDate(start_date);
-  tempDate.setDate(tempDate.getDate() + i);
-  if (tempDate.getDate() == 1) {
-    current_y += 30;
-  	var areatxt = layr.textFrames.add();
-  	areatxt.left = current_x;
-  	areatxt.top = end_y;
-  	areatxt.contents = month_names[tempDate.getMonth()];
-  	areatxt.textRange.characterAttributes.size = 10;
-    line.strokeWidth = .5;
-    line.setEntirePath( Array( Array(current_x, start_y), Array(current_x, end_y) ) );
-  }
-  if (tempDate.getDate() == 11 || tempDate.getDate() == 21 || tempDate.getDate() == 31) {
-    current_y -= 10;
-    line.strokeWidth = .25;
-    line.setEntirePath( Array( Array(current_x, start_y), Array(current_x, end_y) ) );
-  }
+	var current_x = start_x + (i * multiplier);
+	var tempDate = parseDate(start_date);
+	tempDate.setDate(tempDate.getDate() + i);
+	if (tempDate.getDate() == 1) {
+		current_y += 30;
+		var areatxt = layr.textFrames.add();
+		areatxt.left = current_x;
+		areatxt.top = end_y;
+		areatxt.contents = month_names[tempDate.getMonth()];
+		areatxt.textRange.characterAttributes.size = 10;
+		line.strokeWidth = .5;
+		line.setEntirePath( Array( Array(current_x, start_y), Array(current_x, end_y) ) );
+	}
+	if (tempDate.getDate() == 11 || tempDate.getDate() == 21 || tempDate.getDate() == 31) {
+		current_y -= 10;
+		line.strokeWidth = .25;
+		line.setEntirePath( Array( Array(current_x, start_y), Array(current_x, end_y) ) );
+	}
 // 	var days = layr.pathItems.ellipse(current_y, current_x, radius, radius, true, false);
 }
 
@@ -261,20 +261,20 @@ var strokeWidth = 5;
 var layr = doc.layers.add();
 current_y = start_y;
 for (i=0; i<items.length; i++) {
-  var line = layr.pathItems.add();
-  line.stroked = true;
-  line.filled = false;
-  line.strokeCap = StrokeCap.ROUNDENDCAP;
-  line.strokeWidth = 6;
+	var line = layr.pathItems.add();
+	line.stroked = true;
+	line.filled = false;
+	line.strokeCap = StrokeCap.ROUNDENDCAP;
+	line.strokeWidth = 6;
 
-  var line_start = datediff(parseDate(start_date), parseDate([items[i][0], items[i][1], items[i][2]]));
-  var line_length = 0;
-  if(typeof items[i][5] !== 'undefined') {
-    line_length = datediff(parseDate([items[i][0], items[i][1], items[i][2]]), parseDate([items[i][5], items[i][6], items[i][7]]));
-  }
-  var start_item_x = start_x + (line_start * multiplier);
-  var end_item_x = start_x + ((line_start + line_length)) * multiplier;
-  line.setEntirePath( Array( Array(start_item_x, current_y), Array(end_item_x, current_y)));
+	var line_start = datediff(parseDate(start_date), parseDate([items[i][0], items[i][1], items[i][2]]));
+	var line_length = 0;
+	if(typeof items[i][5] !== 'undefined') {
+		line_length = datediff(parseDate([items[i][0], items[i][1], items[i][2]]), parseDate([items[i][5], items[i][6], items[i][7]]));
+	}
+	var start_item_x = start_x + (line_start * multiplier);
+	var end_item_x = start_x + ((line_start + line_length)) * multiplier;
+	line.setEntirePath( Array( Array(start_item_x, current_y), Array(end_item_x, current_y)));
 
 	var areatxt = layr.textFrames.add();
 	areatxt.left = end_item_x + 6;
@@ -282,5 +282,5 @@ for (i=0; i<items.length; i++) {
 	areatxt.contents = items[i][3];
 	areatxt.textRange.characterAttributes.size = 9;
 
-  current_y -= 11;
+	current_y -= 11;
 }

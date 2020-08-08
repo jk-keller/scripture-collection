@@ -11,7 +11,7 @@ var newLayerRef = activeDocument.layers.add();
 
 // prompt for how many rects to make
 var pTotal = prompt("How many?", 100)*1;
-// prompt for the range of size 
+// prompt for the range of size
 var pMinSize = prompt("Minimum size?", 20)*1;
 var pMaxSize = prompt("Maximum size?", 100)*1;
 // prompt for location bounds
@@ -32,8 +32,8 @@ for (j=0; j<pTotal; j++) {
 	var point3Ref = new Array(xLoc+tHeight, yLoc+tWidth);
 	var point4Ref = new Array(xLoc+tHeight, yLoc);
 
-	var newPathRef = newLayerRef.pathItems.add();			
+	var newPathRef = newLayerRef.pathItems.add();
 	newPathRef.setEntirePath( new Array(point1Ref, point2Ref, point3Ref, point4Ref) );
-	
+
 	newPathRef.closed = true;
 }

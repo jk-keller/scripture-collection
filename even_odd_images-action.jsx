@@ -17,29 +17,29 @@ var doc = app.activeDocument;
 var newWidth = doc.width;
 var newHeight = doc.height;
 if (cropAdd == "ADD") {
-  var changeAmt = 1;
+	var changeAmt = 1;
 } if (cropAdd == "CROP") {
-  var changeAmt = -1;
+	var changeAmt = -1;
 }
 if (newWidth % 2 == 1) {
-  newWidth += changeAmt;
+	newWidth += changeAmt;
 }
 if (newHeight % 2 == 1) {
-  newHeight += changeAmt;
+	newHeight += changeAmt;
 }
 
 // whatever, I couldn't quickly figure out how to get this to dynamically change
 switch (anchorChoice) {
-  case 'BOTTOMLEFT':
-    doc.resizeCanvas(newWidth,newHeight,AnchorPosition.BOTTOMLEFT);
-    break;
-  case 'BOTTOMRIGHT':
-    doc.resizeCanvas(newWidth,newHeight,AnchorPosition.BOTTOMRIGHT );
-    break;
-  case 'TOPLEFT':
-    doc.resizeCanvas(newWidth,newHeight,AnchorPosition.TOPLEFT);
-    break;
-  case 'TOPRIGHT':
-    doc.resizeCanvas(newWidth,newHeight,AnchorPosition.TOPRIGHT);
-    break;
+	case 'BOTTOMLEFT':
+		doc.resizeCanvas(newWidth,newHeight,AnchorPosition.BOTTOMLEFT);
+		break;
+	case 'BOTTOMRIGHT':
+		doc.resizeCanvas(newWidth,newHeight,AnchorPosition.BOTTOMRIGHT );
+		break;
+	case 'TOPLEFT':
+		doc.resizeCanvas(newWidth,newHeight,AnchorPosition.TOPLEFT);
+		break;
+	case 'TOPRIGHT':
+		doc.resizeCanvas(newWidth,newHeight,AnchorPosition.TOPRIGHT);
+		break;
 }

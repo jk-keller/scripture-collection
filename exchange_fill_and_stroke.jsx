@@ -38,7 +38,7 @@ if (selRef.length == 0) {
 
 function exchangeColor (aPath) {
 	if (aPath.stroked == true) {
-		var sColor = aPath.strokeColor;	
+		var sColor = aPath.strokeColor;
 	} else {
 		var sColor = false;
 	};
@@ -47,11 +47,11 @@ function exchangeColor (aPath) {
 	} else {
 		var fColor = false;
 	};
-	
+
 	if (sColor == false) {
-		aPath.filled = false;	
+		aPath.filled = false;
 	} else {
-		aPath.filled = true;	
+		aPath.filled = true;
 		aPath.fillColor = sColor;
 	};
 	if (fColor == false) {

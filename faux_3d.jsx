@@ -15,10 +15,10 @@ if (selRef.length == 0) {
 
 	var xDiff = prompt("X Distance Offset:",5)*1;
 	var yDiff = prompt("X Distance Offset:",5)*1;
-	
+
 	for (i=0; i<selRef.length; i++) {
 		var pathRef = selRef[i];
-			
+
 		if (pathRef.typename == "GroupItem") {
 			alert("Nothing grouped just yet, please.")
 		} else if (pathRef.typename == "CompundPathItem") {
@@ -34,7 +34,7 @@ if (selRef.length == 0) {
 					var point2Ref = pathRef.pathPoints[k+1];
 				};
 
-				var newPathRef = newLayerRef.pathItems.add();			
+				var newPathRef = newLayerRef.pathItems.add();
 				newPathRef.setEntirePath( new Array(point1Ref.anchor, point2Ref.anchor, new Array(point2Ref.anchor[0]+xDiff, point2Ref.anchor[1]+yDiff), new Array(point1Ref.anchor[0]+xDiff, point1Ref.anchor[1]+yDiff)) );
 
 				newPathRef.closed = true;
@@ -56,4 +56,4 @@ if (selRef.length == 0) {
 		}
 	}
 }
-	
+
