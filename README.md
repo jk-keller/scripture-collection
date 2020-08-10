@@ -23,4 +23,4 @@
 
 | PHP | - | - |
 | --- | --- | --- |
-| [![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/write_to_php.png) Write to PHP](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/PHP/write_to_php.jsx) | ____________________ | ____________________ |
+| [![ ](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/img/write_to_php.png) Write to PHP](https://github.com/anonlethal-jerk/talk-or-learn-when-jaded/blob/master/PHP/write_to_php.php) | ____________________ | ____________________ |
