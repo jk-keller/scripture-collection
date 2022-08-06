@@ -3,6 +3,8 @@
 // created by A Nonlethal Jerk, dilettante coder
 // https://anonlethal-jerk.github.io/
 //
+// - This will create a new layer of randomized rectangles within a defined bounds
+//
 
 #target illustrator
 

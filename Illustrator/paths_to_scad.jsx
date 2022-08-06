@@ -2,6 +2,12 @@
 // started by A Nonlethal Jerk, dilettante coder. Can't find who really fleshed this out at the moment
 // https://anonlethal-jerk.github.io/
 //
+// *you'll likely want to 'Add Anchor Points' (maybe more than once) then 'Simplify Path' with straight lines, as beziers are not allowed.*
+// - Move path(s) to 0,0 on the artboard to get a decent reference point.
+// - Select path(s) & run script. *grouped paths don't work yet*
+// - I've rounded numbers to 2 significant digit to keep my files cleaner.
+// - Converts points (what Illustrator uses as a default unit) to millimeters.
+//
 
 #target illustrator
 function coordToMm(coord) { return Math.round(coord / .02834645)/100; }

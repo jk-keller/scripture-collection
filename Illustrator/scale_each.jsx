@@ -2,6 +2,11 @@
 // created by A Nonlethal Jerk, dilettante coder
 // https://anonlethal-jerk.github.io/
 //
+// *a little more control over scaling each path vs. built-in "Transform Each" function*
+// - Select path(s) & run script.
+// - Choose 'random' or 'linear' method.
+// - Input minimum & maximum scaling limits.
+//
 
 #target illustrator
 

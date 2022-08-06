@@ -4,6 +4,8 @@
 // TODO:
 // work with arrays of arrays of numbers (group3 & group 4)
 //
+// *creates a bar graph from an array of values. I know, this tool exists.*
+//
 
 var doc = app.activeDocument;
 var bar_thickness = 10;

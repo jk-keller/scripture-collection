@@ -4,6 +4,9 @@
 // created by A Nonlethal Jerk, dilettante coder
 // https://anonlethal-jerk.github.io/
 //
+// - Select path(s) & run script.
+// - Input minimum & maximum dash limits.
+//
 
 #target illustrator
 

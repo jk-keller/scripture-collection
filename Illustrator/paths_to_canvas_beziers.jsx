@@ -2,6 +2,10 @@
 // created by A Nonlethal Jerk, dilettante coder
 // https://anonlethal-jerk.github.io/
 //
+// - Move path(s) to 0,0 on the artboard to get a decent reference point.
+// - Select path(s) & run script. *grouped paths don't work yet*
+// These both take a path from Illustrator and output it to canvas bezier, with one creating variable arrays of all the points first.
+//
 
 #target illustrator
 

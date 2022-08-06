@@ -3,6 +3,8 @@
 // created by A Nonlethal Jerk, dilettante coder
 // https://anonlethal-jerk.github.io/
 //
+//- Select path(s) & run script. *no groups or compound paths*
+//
 
 #target illustrator
 
