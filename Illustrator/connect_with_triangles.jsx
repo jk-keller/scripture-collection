@@ -1,7 +1,7 @@
 ﻿// Connect all points in selected paths with lines
 //
-// created by A Nonlethal Jerk, dilettante coder
-// https://anonlethal-jerk.github.io/
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 
 // get selected elements & cycle through them

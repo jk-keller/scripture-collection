@@ -2,7 +2,7 @@
 
 | AppleScript | - | - |
 | --- | --- | --- |
-| [Export all Apple Notes to HTML](https://github.com/anonlethal-jerk/notes-export) | ____________________ | ____________________ |
+| [Export all Apple Notes to HTML](https://github.com/jk-keller/notes-export) | ____________________ | ____________________ |
 
 | Illustrator | - | - |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 // randomly create audio snippets that are offset & stretched
 //
-// created by A Nonlethal Jerk, dilettante coder
-// https://anonlethal-jerk.github.io/
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 
 var theComp = app.project.activeItem;

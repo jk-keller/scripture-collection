@@ -1,5 +1,6 @@
 //
-// created by A Nonlethal Jerk, dilettante coder
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 
 //

@@ -1,6 +1,6 @@
 ﻿//
-// started by A Nonlethal Jerk, dilettante coder. Can't find who really fleshed this out at the moment
-// https://anonlethal-jerk.github.io/
+// started by JK Keller, dilettante coder. Can't find who really fleshed this out at the moment
+// https://jk-keller.com/
 //
 // *you'll likely want to 'Add Anchor Points' (maybe more than once) then 'Simplify Path' with straight lines, as beziers are not allowed.*
 // - Move path(s) to 0,0 on the artboard to get a decent reference point.

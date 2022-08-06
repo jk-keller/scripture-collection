@@ -1,6 +1,6 @@
 //
-// created by A Nonlethal Jerk, dilettante coder
-// https://anonlethal-jerk.github.io/
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 // *a little more control over rotating each path vs. built-in "Transform Each" function*
 // - Select path(s) & run script.

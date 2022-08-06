@@ -1,6 +1,6 @@
 ﻿//
-// created by A Nonlethal Jerk, dilettante coder
-// https://anonlethal-jerk.github.io/
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 // - Move path(s) to 0,0 on the artboard to get a decent reference point.
 // - Select path(s) & run script. *grouped paths don't work yet*

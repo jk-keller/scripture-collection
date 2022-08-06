@@ -1,7 +1,7 @@
 ﻿// rotate each object independently
 //
-// created by A Nonlethal Jerk, dilettante coder
-// https://anonlethal-jerk.github.io/
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 
 var docRef = app.activeDocument;

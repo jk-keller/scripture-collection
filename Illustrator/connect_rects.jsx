@@ -1,7 +1,7 @@
 // draws a series of objects that look like lines from one rect to another
 //
-// created by A Nonlethal Jerk, dilettante coder
-// https://anonlethal-jerk.github.io/
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 
 // variables

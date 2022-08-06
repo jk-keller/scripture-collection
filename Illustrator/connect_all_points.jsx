@@ -1,7 +1,7 @@
 // Connect all points in selected paths with lines
 //
-// created by A Nonlethal Jerk, dilettante coder
-// https://anonlethal-jerk.github.io/
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 
 // TO ANIMATE THIS, I HAVE TO BE ABLE TO STORE THE COLORS

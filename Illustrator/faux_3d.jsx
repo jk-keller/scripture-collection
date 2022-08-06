@@ -1,7 +1,7 @@
 // fo3d - faux 3d
 //
-// created by A Nonlethal Jerk, dilettante coder
-// https://anonlethal-jerk.github.io/
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 //- Select path(s) & run script. *no groups or compound paths*
 //

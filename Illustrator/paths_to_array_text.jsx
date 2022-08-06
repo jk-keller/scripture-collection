@@ -1,7 +1,7 @@
 // create an array of all the points in a path
 //
-// created by A Nonlethal Jerk, dilettante coder
-// https://anonlethal-jerk.github.io/
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 
 app.preferences.rulerUnits = RulerUnits.Pixels

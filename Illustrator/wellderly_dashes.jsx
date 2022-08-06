@@ -1,8 +1,8 @@
 // Wellderly -- Dash Maker
 // Gives the selected path(s) a random color and dash pattern
 //
-// created by A Nonlethal Jerk, dilettante coder
-// https://anonlethal-jerk.github.io/
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 // - Select path(s) & run script.
 // - Input minimum & maximum dash limits.

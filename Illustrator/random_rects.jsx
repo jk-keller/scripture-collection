@@ -1,7 +1,7 @@
 // Create a bunch of randomly sized rectangles
 //
-// created by A Nonlethal Jerk, dilettante coder
-// https://anonlethal-jerk.github.io/
+// created by JK Keller, dilettante coder
+// https://jk-keller.com/
 //
 // - This will create a new layer of randomized rectangles within a defined bounds
 //
