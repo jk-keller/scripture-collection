@@ -1,23 +1,26 @@
-# from: https://stackoverflow.com/questions/17291455/how-to-get-an-average-picture-from-100-pictures-using-pil
+# adapted from CnrL’s answer: https://stackoverflow.com/questions/17291455/how-to-get-an-average-picture-from-100-pictures-using-pil
+# remember... python3 filename.py
 
 import os, numpy, PIL
 from PIL import Image
 
-# Access all PNG files in directory
+# Access all JPG files in directory
 allfiles=os.listdir(os.getcwd())
 imlist=[filename for filename in allfiles if  filename[-4:] in [".jpg",".JPG"]]
 
 # Assuming all images are the same size, get dimensions of first image
 w,h=Image.open(imlist[0]).size
-# N=len(imlist)
-N=8892
+N=len(imlist)
+# N=8892
+# images per averaging group
 g=17
+# step per group start
 s=5
 
 # 8892
 # 60sec @ 30fps = 1800
-# 8892 / 1800 = 4.94 (5)
-# i*5 + j in range g
+# 8892 / 1800 = 4.94 (~5)
+# (N-g)/s should get 1775 averaged frames and include all images
 
 for i in range(int((N-g)/s)):
     # Create a numpy array of floats to store the average (assume RGB images)
@@ -33,5 +36,5 @@ for i in range(int((N-g)/s)):
 
     # Generate, save and preview final image
     out=Image.fromarray(arr,mode="RGB")
-    out.save("../averaged/average-" + str(i+1) + ".png")
+    out.save("../averaged/average-" + str(i*s+1) + "-" + str(i*s+g+1) + ".png")
     # out.show()
