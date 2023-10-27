@@ -7,6 +7,7 @@ from PIL import Image
 # Access all JPG files in directory
 allfiles=os.listdir(os.getcwd())
 imlist=[filename for filename in allfiles if  filename[-4:] in [".jpg",".JPG"]]
+imlist.sort()
 
 # Assuming all images are the same size, get dimensions of first image
 w,h=Image.open(imlist[0]).size
