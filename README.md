@@ -24,3 +24,7 @@
 | PHP | - | - |
 | --- | --- | --- |
 | [![ ](https://github.com/jk-keller/scripture-collection/blob/master/img/write_to_php.png) Write to PHP](https://github.com/jk-keller/scripture-collection/blob/master/PHP/write_to_php.php) | ____________________ | ____________________ |
+
+| Python | - | - |
+| --- | --- | --- |
+| [![ ](https://github.com/jk-keller/scripture-collection/blob/master/img/python--average.jpg) Average groups of images](https://github.com/jk-keller/scripture-collection/blob/master/Python/averaged_image_groups.py) | [![ ](https://github.com/jk-keller/scripture-collection/blob/master/img/python--slitscan.jpg) Slitscan timeline of images](https://github.com/jk-keller/scripture-collection/blob/master/Python/slitscan_images.py) | ____________________ |
