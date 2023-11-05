@@ -1,5 +1,7 @@
 # adapted from CnrL’s answer: https://stackoverflow.com/questions/17291455/how-to-get-an-average-picture-from-100-pictures-using-pil
-# remember... python3 filename.py
+# remember...
+#     python3 filename.py
+#     alphabetical needs name-0000#.jpg
 
 import os, numpy, PIL
 from PIL import Image
@@ -24,6 +26,9 @@ s=5
 # (N-g)/s should get 1775 averaged frames and include all images
 
 for i in range(int((N-g)/s)):
+    if i%100 == 0:
+        print("going... "+str(i))
+
     # Create a numpy array of floats to store the average (assume RGB images)
     arr=numpy.zeros((h,w,3),float)
 
